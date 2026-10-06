@@ -1,0 +1,4 @@
+Mentor: Welcome Jordan, let's review your semester goals.
+Student: I want to improve database design and join CodeCraft club.
+Mentor: Action items: complete DB workshop, submit project milestone by Friday.
+Student: Agreed. I'll register for the Wednesday lab session.

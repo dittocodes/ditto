@@ -1,0 +1,464 @@
+/* Onboarding wizard — Tracker shell */
+
+.tracker-onboarding-page {
+  max-width: 920px;
+}
+
+.tracker-onboarding-page .tracker-page-title {
+  color: #2374c9;
+  font-size: clamp(1.85rem, 3vw, 2.35rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.tracker-onboarding-page .tracker-page-sub {
+  color: #617a98;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.tracker-onboarding-stepper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.tracker-onboarding-step-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #dbe2eb;
+  background: #fff;
+  color: #58708f;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: default;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.tracker-onboarding-step-pill.clickable {
+  cursor: pointer;
+}
+
+.tracker-onboarding-step-pill.clickable:hover {
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}
+
+.tracker-onboarding-step-pill.active {
+  background: #fef9c3;
+  border-color: #fde68a;
+  color: #854d0e;
+  font-weight: 600;
+}
+
+.tracker-onboarding-step-pill.done {
+  background: #ecfdf5;
+  border-color: #bbf7d0;
+  color: #15803d;
+}
+
+.tracker-onboarding-step-num {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tracker-onboarding-step-pill.active .tracker-onboarding-step-num {
+  background: #eab308;
+  color: #fff;
+}
+
+.tracker-onboarding-step-pill.done .tracker-onboarding-step-num {
+  background: #22c55e;
+  color: #fff;
+}
+
+.tracker-onboarding-progress {
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 999px;
+  margin-bottom: 22px;
+  overflow: hidden;
+}
+
+.tracker-onboarding-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+  border-radius: 999px;
+  transition: width 0.25s ease;
+}
+
+.tracker-onboarding-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 28px 28px 24px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+.tracker-onboarding-card-head {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  margin-bottom: 22px;
+}
+
+.tracker-onboarding-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eff6ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tracker-onboarding-card-icon.gold {
+  background: #fef9c3;
+  color: #ca8a04;
+}
+
+.tracker-onboarding-card-icon.green {
+  background: #ecfdf5;
+  color: #16a34a;
+}
+
+.tracker-onboarding-card-head h2 {
+  margin: 0 0 6px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.tracker-onboarding-card-head p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+.tracker-onboarding-consent {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 16px 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.tracker-onboarding-consent input {
+  margin-top: 4px;
+  width: 18px;
+  height: 18px;
+  accent-color: #2563eb;
+  flex-shrink: 0;
+}
+
+.tracker-onboarding-consent strong {
+  display: block;
+  font-size: 15px;
+  color: #0f172a;
+  margin-bottom: 4px;
+}
+
+.tracker-onboarding-consent span {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.45;
+}
+
+.tracker-onboarding-upload {
+  border: 2px dashed #cbd5e1;
+  border-radius: 10px;
+  padding: 28px 20px;
+  text-align: center;
+  background: #fafbfc;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.tracker-onboarding-upload.ready {
+  border-color: #93c5fd;
+  background: #f0f9ff;
+}
+
+.tracker-onboarding-upload.disabled {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.tracker-onboarding-upload label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 12px;
+}
+
+.tracker-onboarding-upload input[type='file'] {
+  display: none;
+}
+
+.tracker-onboarding-upload-hint {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+.tracker-onboarding-status {
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.tracker-onboarding-status.ok {
+  color: #16a34a;
+}
+
+.tracker-onboarding-status.err {
+  color: #dc2626;
+}
+
+.tracker-onboarding-field {
+  margin-bottom: 16px;
+}
+
+.tracker-onboarding-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 6px;
+}
+
+.tracker-onboarding-field .tracker-input {
+  margin-top: 0;
+}
+
+.tracker-onboarding-field-hint {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 4px;
+}
+
+.tracker-onboarding-review-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.tracker-onboarding-review-block {
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+.tracker-onboarding-review-block h4 {
+  margin: 0 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #64748b;
+}
+
+.tracker-onboarding-review-block dl {
+  margin: 0;
+}
+
+.tracker-onboarding-review-block dt {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 8px;
+}
+
+.tracker-onboarding-review-block dt:first-child {
+  margin-top: 0;
+}
+
+.tracker-onboarding-review-block dd {
+  margin: 2px 0 0;
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.tracker-onboarding-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid #f1f5f9;
+  flex-wrap: wrap;
+}
+
+.tracker-onboarding-actions-right {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.tracker-onboarding-btn-back {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid #dbe2eb;
+  background: #fff;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tracker-onboarding-btn-back:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.tracker-onboarding-btn-primary {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #2563eb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tracker-onboarding-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tracker-onboarding-btn-gold {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #fde68a;
+  background: linear-gradient(180deg, #fef9c3, #fde047);
+  color: #713f12;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tracker-onboarding-done {
+  text-align: center;
+  padding: 12px 8px 8px;
+}
+
+.tracker-onboarding-done-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: #ecfdf5;
+  color: #16a34a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tracker-onboarding-done h2 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+  color: #0f172a;
+}
+
+.tracker-onboarding-done p {
+  margin: 0 auto 20px;
+  max-width: 420px;
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.55;
+}
+
+.tracker-onboarding-done-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.tracker-onboarding-alert {
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.tracker-onboarding-alert.error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.tracker-onboarding-save-state {
+  margin-left: 8px;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.tracker-onboarding-doc-list {
+  list-style: none;
+  margin: 12px 0 0;
+  padding: 0;
+}
+
+.tracker-onboarding-doc-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 14px;
+}
+
+.tracker-onboarding-doc-list em {
+  font-style: normal;
+  color: #64748b;
+  font-size: 12px;
+}
+
+@media (max-width: 640px) {
+  .tracker-onboarding-review-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tracker-onboarding-stepper {
+    flex-direction: column;
+  }
+
+  .tracker-onboarding-step-pill {
+    width: 100%;
+  }
+}

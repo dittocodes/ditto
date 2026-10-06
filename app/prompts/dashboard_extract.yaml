@@ -1,0 +1,16 @@
+# Dashboard delta extract for living report type tracker_dashboard (numbers only in delta).
+template: |
+  From this anonymised document analysis JSON, extract a dashboard delta object.
+  Return JSON only with optional keys:
+  engagement_score (number 0-100),
+  attendance_pct (number 0-100),
+  benchmark (axes, your_score, regional_avg, global_avg arrays),
+  skills_overview (list of objects with name and pct),
+  skill_distribution (list of objects with name and value),
+  performance_score (number),
+  global_rank (integer),
+  learning_pathway (object with phases list of title/subtitle/status/progress_pct),
+  narrative_hints (object).
+  Omit keys you cannot infer. Do not invent PII.
+  Document fields:
+  {fields_json}

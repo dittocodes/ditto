@@ -1,0 +1,362 @@
+/* Profile → Documents tab (reference mockup) */
+
+.tracker-profile-documents-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+.tracker-profile-doc-actions-card {
+  background: #fff;
+  border: 1px solid #dfe6ee;
+  border-radius: 10px;
+  box-shadow: 0 2px 7px rgba(22, 50, 80, 0.04);
+  padding: 20px 22px 22px;
+  margin-bottom: 20px;
+}
+
+.tracker-profile-doc-actions-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.tracker-profile-doc-actions-head svg {
+  color: #efbd20;
+  flex-shrink: 0;
+}
+
+.tracker-profile-doc-actions-head h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #071a36;
+}
+
+.tracker-profile-doc-actions-panel {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 10px;
+  padding: 18px 16px;
+}
+
+.tracker-profile-doc-actions-panel > p {
+  margin: 0 0 14px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #713f12;
+}
+
+.tracker-profile-doc-btn-gold {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 11px 16px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #fde047, #eab308);
+  color: #422006;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.tracker-profile-doc-btn-gold:last-child {
+  margin-bottom: 0;
+}
+
+.tracker-profile-doc-btn-outline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 16px;
+  margin-bottom: 10px;
+  border: 1px solid #fde68a;
+  border-radius: 8px;
+  background: #fff;
+  color: #854d0e;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tracker-profile-doc-btn-outline:last-of-type {
+  margin-bottom: 0;
+}
+
+.tracker-profile-doc-recent-card {
+  background: #fff;
+  border: 1px solid #dfe6ee;
+  border-radius: 10px;
+  box-shadow: 0 2px 7px rgba(22, 50, 80, 0.04);
+  padding: 18px 20px;
+}
+
+.tracker-profile-doc-recent-card h3 {
+  margin: 0 0 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #071a36;
+}
+
+.tracker-profile-doc-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.tracker-profile-doc-list-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.tracker-profile-doc-list-item:first-child {
+  padding-top: 0;
+}
+
+.tracker-profile-doc-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.tracker-profile-doc-icon.blue {
+  background: #2563eb;
+}
+
+.tracker-profile-doc-icon.purple {
+  background: #7c3aed;
+}
+
+.tracker-profile-doc-list-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.tracker-profile-doc-list-copy strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.tracker-profile-doc-list-copy span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.tracker-profile-doc-download {
+  border: none;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.tracker-profile-doc-download:hover {
+  background: #f1f5f9;
+  color: #2563eb;
+}
+
+.tracker-profile-cv-preview-card {
+  background: #fff;
+  border: 1px solid #dfe6ee;
+  border-radius: 10px;
+  box-shadow: 0 2px 7px rgba(22, 50, 80, 0.04);
+  padding: 22px 26px 28px;
+  min-height: 520px;
+}
+
+.tracker-profile-cv-preview-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.tracker-profile-cv-preview-head-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #fef9c3;
+  color: #ca8a04;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tracker-profile-cv-preview-head h2 {
+  margin: 0 0 4px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #071a36;
+}
+
+.tracker-profile-cv-preview-head p {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.tracker-profile-cv-section {
+  margin-bottom: 22px;
+}
+
+.tracker-profile-cv-section:last-child {
+  margin-bottom: 0;
+}
+
+.tracker-profile-cv-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.tracker-profile-cv-section-title svg {
+  color: #64748b;
+  flex-shrink: 0;
+}
+
+.tracker-profile-cv-section-title.gold svg {
+  color: #ca8a04;
+}
+
+.tracker-profile-cv-personal p {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.tracker-profile-cv-personal strong {
+  font-size: 15px;
+  color: #0f172a;
+}
+
+.tracker-profile-cv-education p {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: #334155;
+}
+
+.tracker-profile-cv-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tracker-profile-cv-skill-pill {
+  background: #fef9c3;
+  border: 1px solid #fde047;
+  color: #854d0e;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.tracker-profile-cv-cert-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tracker-profile-cv-cert-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.45;
+}
+
+.tracker-profile-cv-cert-list li svg {
+  color: #ea580c;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.tracker-profile-cv-exp-block {
+  margin-bottom: 16px;
+}
+
+.tracker-profile-cv-exp-block:last-child {
+  margin-bottom: 0;
+}
+
+.tracker-profile-cv-exp-block strong {
+  display: block;
+  font-size: 14px;
+  color: #0f172a;
+  margin-bottom: 2px;
+}
+
+.tracker-profile-cv-exp-org {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.tracker-profile-cv-exp-bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 6px;
+  line-height: 1.45;
+}
+
+.tracker-profile-cv-exp-bullet svg {
+  color: #22c55e;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.tracker-profile-cv-standards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tracker-profile-cv-standard-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.tracker-profile-cv-standard-row svg {
+  color: #2563eb;
+  flex-shrink: 0;
+}
+
+@media (max-width: 960px) {
+  .tracker-profile-documents-layout {
+    grid-template-columns: 1fr;
+  }
+}

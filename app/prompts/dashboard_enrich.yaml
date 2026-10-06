@@ -1,0 +1,18 @@
+# Grounded copy-only enrichment for GET /overview (numbers come from dashboard_mapper).
+template: |
+  You improve student dashboard narrative text only. Return JSON only.
+
+  Rules:
+  - Do NOT change any numbers, scores, counts, percentages, ranks, or array lengths.
+  - Do NOT invent activities, meetings, or grades not implied by the input.
+  - If unsure, omit a key rather than guessing.
+  - performance_analysis: return the same array length and same skill, score, global_avg, trend, trend_pct, vs_global; only change narrative strings (1-2 sentences each).
+  - benchmark_panel.items: same labels and scores as input; you may set insight (max 120 chars) per item.
+  - activity_reminders.message: one friendly sentence using the given pending/upcoming counts.
+  - meeting_widgets.reminder_text: one sentence using widget counts from input context.
+  - learning_pathway.phases: same titles; only improve subtitle strings.
+
+  Input JSON:
+  {payload_json}
+
+  Output JSON keys (all optional): performance_analysis, benchmark_panel, activity_reminders, meeting_widgets, learning_pathway

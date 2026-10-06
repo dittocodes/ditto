@@ -1,0 +1,198 @@
+/* admin Dashboard Container */
+.admin-dashboard__container {
+    display: flex;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #f1f5f9;
+    background-image: url('../images/landing.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    position: relative; /* Enables absolute positioning for Powered by */
+  }
+  
+  /* Sidebar */
+  .admin-dashboard__sidebar-container {
+    width: 250px;
+    background-color: #2f3c4e; /* Example background */
+  }
+  
+  .admin-dashboard__sidebar-container .sidebar-item {
+    padding: 10px;
+    color: white;
+  }
+  
+  /* Main Content */
+  .admin-dashboard__main-content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Example of dynamically generated page content */
+  .admin-dashboard__main-content-container .content-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .admin-dashboard__main-content-container .content-body {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  /* "Powered by" Section */
+.admin-dashboard-powered-by {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000; /* Subtle gray color */
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.ad-footer-link{
+  color: #000000; /* Set link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.ad-footer-link:hover{
+  color: #45a049; /* Set link color */
+  text-decoration: none;
+}
+
+/* Right logo at the top-right corner */
+.ad-logo-right {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  width: 150px; /* Adjust width */
+  height: 150px; /* Adjust height */
+  background-image: url('https://res.cloudinary.com/dvlitilou/image/upload/v1779924616/Jain-Logo_jix84i.png'); /* Right logo image */
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index:1;
+}
+
+@media (max-width: 768px) {
+  /* Sidebar */
+  .admin-dashboard__sidebar-container {
+    width: 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Added spacing between items */
+  }
+  
+  .admin-dashboard-powered-by {
+    position: fixed;
+    bottom: 7px; /* Adjust the spacing from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75rem;
+    color: #ffffff; /* Neutral color for the text */
+    text-align: center;
+    z-index: 2;
+  }
+  
+  .ad-footer-link{
+    color: #ffffff; /* Set link color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .ad-footer-link:hover{
+    color: #45a049; /* Set link color */
+    text-decoration: none;
+  }
+  
+  .ad-logo-right {
+    position: fixed;
+    right: 15px;
+    margin-top: -15px;
+    width: 130px; /* Adjust width */
+    height: 150px; /* Adjust height */
+    background-image: url('https://res.cloudinary.com/dvlitilou/image/upload/v1779924616/Jain-Logo_jix84i.png'); /* Right logo image */
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .admin-dashboard__main-content-container {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+    /* Main Content */
+    .admin-dashboard__main-content-container {
+      flex-grow: 1;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  }
+
+.owner-live-counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 0 24px;
+}
+
+.owner-live-counts div {
+  background: #fff;
+  border-radius: 12px;
+  min-width: 120px;
+  padding: 12px 14px;
+}
+
+.owner-live-counts strong {
+  display: block;
+  font-size: 22px;
+}
+
+.owner-live-counts span,
+.owner-live-table small,
+.owner-live-note {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.owner-live-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-bottom: 24px;
+}
+
+.owner-live-table th,
+.owner-live-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e2e8f0;
+  vertical-align: top;
+}
+
+.owner-kb-list {
+  list-style: none;
+  padding: 0;
+}
+
+.owner-kb-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+}
+
+.owner-kb-list p {
+  white-space: pre-wrap;
+  margin: 6px 0 0;
+}

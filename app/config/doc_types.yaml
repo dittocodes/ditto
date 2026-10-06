@@ -1,0 +1,23 @@
+# Document type → pipeline report_target and categories
+academic:
+  report_target: academic_report
+  categories: [marklist, certificate, conference, project, thesis, publication]
+career:
+  report_target: career_report
+  categories: [internship, application, offer, skill_assessment]
+campus:
+  report_target: campus_report
+  dashboard_merge: true
+  categories: [club, event, volunteer, leadership]
+inbox:
+  categories: [academic, career, certificate, activity]
+id_card:
+  report_target: onboarding
+  categories: [student_id]
+activity_evidence:
+  report_target: academic_report
+  categories: [activity_proof]
+meeting_recording:
+  report_target: meeting_summary
+  dashboard_merge: true
+  categories: [transcript, recording, notes]

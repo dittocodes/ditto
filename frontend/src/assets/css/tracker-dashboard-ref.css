@@ -1,0 +1,392 @@
+/* Reference dashboard polish (scoped under .tracker-ref) */
+
+.tracker-ref .tracker-sidebar {
+  width: 287px;
+  background: #0b203c;
+}
+
+.tracker-ref.tracker-app.sidebar-collapsed .tracker-sidebar {
+  width: 72px;
+}
+
+.tracker-ref .tracker-sidebar-brand {
+  height: 82px;
+  padding: 0 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tracker-ref .tracker-brand-logo-box {
+  width: 65px;
+  height: 36px;
+  background: #030b17;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.tracker-ref .tracker-brand-main,
+.tracker-ref .tracker-brand-sub {
+  color: #fff;
+  font-size: 7px;
+  font-weight: 700;
+  line-height: 8px;
+}
+
+.tracker-ref .tracker-sidebar-title-ref {
+  font-size: 21px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: #fff;
+}
+
+.tracker-ref .tracker-page-title {
+  color: #2470cf;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: -1.1px;
+}
+
+.tracker-ref .tracker-page-sub {
+  color: #6680a1;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.tracker-ref .tracker-pill-primary {
+  height: 43px;
+  padding: 0 15px;
+  border-radius: 8px;
+  background: #2071d9;
+  border-color: #2071d9;
+  font-size: 15px;
+}
+
+.tracker-ref .tracker-pill-outline {
+  height: 43px;
+  padding: 0 15px;
+  border-radius: 8px;
+  border: 1px solid #dbe2eb;
+  color: #071a36;
+  font-size: 15px;
+}
+
+.tracker-ref .tracker-page-header {
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.tracker-ref .tracker-page-sub {
+  margin-bottom: 0;
+}
+
+.tracker-ref .tracker-dashboard-page .tracker-stat-grid {
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.tracker-ref .tracker-stat-card-title {
+  color: #6580a2;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.tracker-ref .tracker-stat-card-value {
+  font-size: 36px;
+  font-weight: 700;
+  color: #061936;
+  margin-top: 6px;
+}
+
+.tracker-ref .tracker-stat-card-icon {
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: #eef6ff;
+  color: #137be0;
+  font-size: 16px;
+}
+
+.tracker-ref .tracker-stat-updated {
+  font-size: 12px;
+  color: #7a93b0;
+  margin-top: 6px;
+}
+
+.tracker-ref .tracker-header-pills {
+  gap: 10px;
+}
+
+.tracker-ref .tracker-kpi-section {
+  padding: 22px 24px 24px;
+  border: 1px solid #dce4ee;
+  box-shadow: none;
+}
+
+.tracker-ref .tracker-kpi-section .tracker-kpi-grid {
+  margin-top: 18px;
+  gap: 14px;
+}
+
+.tracker-ref .tracker-kpi-change-line.down {
+  color: #e84949;
+}
+
+.tracker-ref .tracker-kpi-change-line.down .tracker-trend-arrow-down {
+  transform: rotate(180deg);
+}
+
+.tracker-ref .tracker-stat-trend-pill.down .tracker-trend-arrow-down {
+  transform: rotate(90deg);
+}
+
+.tracker-ref .tracker-stat-card-rich {
+  border: 1px solid #dce4ee;
+  border-radius: 10px;
+  min-height: 248px;
+  padding: 18px 18px 12px;
+}
+
+.tracker-ref .tracker-stat-trend-pill {
+  width: fit-content;
+  min-width: 72px;
+  height: 24px;
+  padding: 0 9px;
+  border-radius: 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.tracker-ref .tracker-stat-trend-pill.up {
+  background: #ecfaf2;
+  color: #19b85b;
+}
+
+.tracker-ref .tracker-stat-trend-pill.down {
+  background: #fff0f0;
+  color: #e84949;
+}
+
+.tracker-ref .tracker-stat-progress-head {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+  font-size: 13px;
+  color: #0a1d39;
+}
+
+.tracker-ref .tracker-stat-bar {
+  height: 9px;
+  border-radius: 8px;
+}
+
+.tracker-ref .tracker-stat-bar-fill {
+  background: #1976d2;
+  border-radius: 8px;
+}
+
+.tracker-ref .tracker-stat-detail-divider {
+  height: 1px;
+  background: #edf0f4;
+  margin-top: 14px;
+}
+
+.tracker-ref .tracker-stat-detail-btn {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  color: #0874d8;
+  font-size: 13px;
+  font-weight: 500;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 0;
+}
+
+.tracker-ref .tracker-kpi-section > .tracker-section-header .tracker-section-title {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.tracker-ref .tracker-section-pager button {
+  width: 37px;
+  height: 37px;
+  border-radius: 8px;
+  border: 1px solid #e0e6ed;
+  background: white;
+}
+
+.tracker-ref .tracker-kpi-card {
+  height: 201px;
+  border: 1px solid #e0e6ee;
+  background: #fff;
+}
+
+.tracker-ref .tracker-kpi-icon-wrap {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tracker-ref .tracker-kpi-icon-wrap.tone-clock {
+  color: #137be0;
+  background: #eef6ff;
+}
+
+.tracker-ref .tracker-kpi-icon-wrap.tone-book {
+  color: #13bd65;
+  background: #effbf4;
+}
+
+.tracker-ref .tracker-kpi-icon-wrap.tone-target {
+  color: #a249e7;
+  background: #fbf1ff;
+}
+
+.tracker-ref .tracker-kpi-icon-wrap.tone-medal {
+  color: #eab522;
+  background: #fffaf0;
+}
+
+.tracker-ref .tracker-kpi-title-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #6580a2;
+  font-size: 15px;
+}
+
+.tracker-ref .tracker-kpi-value-large {
+  font-size: 27px;
+  font-weight: 700;
+  color: #061936;
+}
+
+.tracker-ref .tracker-kpi-value-large span {
+  font-size: 15px;
+  margin-left: 4px;
+}
+
+.tracker-ref .tracker-kpi-change-line {
+  color: #17bd5c;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.tracker-ref .tracker-kpi-mini-bars {
+  margin-top: 14px;
+}
+
+.tracker-ref .tracker-kpi-week-labels {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #637b9a;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.tracker-ref .tracker-kpi-bar-row {
+  height: 35px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: end;
+  gap: 5px;
+}
+
+.tracker-ref .tracker-kpi-bar {
+  width: 100%;
+  background: #6ba7df;
+  border-radius: 5px 5px 3px 3px;
+}
+
+.tracker-ref .tracker-benchmark-combined {
+  margin-top: 28px;
+  padding: 21px 28px;
+  min-height: 330px;
+}
+
+.tracker-ref .tracker-benchmark-combined-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tracker-ref .tracker-benchmark-combined-title {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #061936;
+}
+
+.tracker-ref .tracker-benchmark-combined-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 16px;
+}
+
+.tracker-ref .tracker-benchmark-panel-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #071a36;
+  margin-bottom: 18px;
+}
+
+.tracker-ref .tracker-benchmark-panel-box {
+  border: 1px solid #e2e8ef;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tracker-ref .tracker-benchmark-panel-row {
+  min-height: 50px;
+  padding: 0 17px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #edf0f4;
+  color: #647b99;
+  font-size: 13px;
+}
+
+.tracker-ref .tracker-benchmark-panel-row:last-child {
+  border-bottom: 0;
+}
+
+.tracker-ref .tracker-benchmark-panel-row strong {
+  color: #071a36;
+  font-size: 14px;
+}
+
+.tracker-ref .tracker-benchmark-panel-insight {
+  display: block;
+  font-size: 11px;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+
+@media (max-width: 900px) {
+  .tracker-ref .tracker-benchmark-combined-body {
+    grid-template-columns: 1fr;
+  }
+}

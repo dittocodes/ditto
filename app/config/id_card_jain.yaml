@@ -1,0 +1,14 @@
+# JAIN ID card field hints (tune when layout confirmed)
+institution: JAIN
+fields:
+  - name: student_name
+    label: Full Name
+  - name: student_usn
+    label: USN / Roll
+  - name: programme
+    label: Programme
+  - name: photo
+    label: Photo
+cross_check:
+  - student_name
+  - student_usn

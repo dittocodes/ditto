@@ -1,0 +1,156 @@
+@tailwind components;
+@tailwind utilities;
+
+.mentor-design {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+  --primary: 221 83% 53%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 214.3 31.8% 91.4%;
+  --input: 214.3 31.8% 91.4%;
+  --ring: 221 83% 53%;
+  --success: 160 84% 39%;
+  --success-foreground: 0 0% 100%;
+  --warning: 38 92% 50%;
+  --warning-foreground: 222 47% 11%;
+  --info: 199 89% 48%;
+  --info-foreground: 0 0% 100%;
+  --term-short: 14 100% 63%;
+  --term-short-foreground: 0 0% 100%;
+  --term-mid: 45 100% 65%;
+  --term-mid-foreground: 222 47% 11%;
+  --term-long: 207 90% 54%;
+  --term-long-foreground: 0 0% 100%;
+  --radius: 0.5rem;
+  --sidebar-background: 222 47% 11%;
+  --sidebar-foreground: 210 40% 98%;
+  --sidebar-primary: 221 83% 53%;
+  --sidebar-primary-foreground: 0 0% 98%;
+  --sidebar-accent: 217.2 32.6% 17.5%;
+  --sidebar-accent-foreground: 210 40% 98%;
+  --sidebar-border: 217.2 32.6% 17.5%;
+  --sidebar-ring: 221 83% 53%;
+  min-height: 100vh;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: ui-sans-serif, system-ui, sans-serif, "Segoe UI", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+.mentor-design, .mentor-design * { box-sizing: border-box; }
+
+.mentor-design h1,
+.mentor-design h2,
+.mentor-design h3,
+.mentor-design h4,
+.mentor-design h5,
+.mentor-design h6 {
+  margin: 0;
+  font-size: unset;
+  font-weight: unset;
+  line-height: 1.25;
+  color: inherit;
+}
+
+.mentor-design p,
+.mentor-design ul,
+.mentor-design ol { margin: 0; }
+
+.mentor-design button,
+.mentor-design .btn {
+  min-height: 0;
+  min-width: 0;
+  width: auto;
+  letter-spacing: normal;
+  font-weight: inherit;
+  border-radius: unset;
+  transform: none;
+  background-color: transparent;
+  background-image: none;
+  padding: 0;
+  border-style: solid;
+  border-width: 0;
+  cursor: pointer;
+}
+
+.mentor-design input,
+.mentor-design textarea,
+.mentor-design select {
+  width: auto;
+  max-width: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: unset;
+  font-size: inherit;
+  line-height: inherit;
+  background: transparent;
+  color: inherit;
+}
+
+.mentor-design a { color: inherit; text-decoration: none; }
+.mentor-design img, .mentor-design svg { max-width: none; }
+.mentor-design table { border-collapse: collapse; }
+
+@media (min-width: 360px) and (max-width: 412px) {
+  .mentor-design button,
+  .mentor-design .btn {
+    border-radius: unset;
+    font-weight: inherit;
+    letter-spacing: normal;
+    transform: none;
+  }
+}
+
+@media (min-width: 576px) {
+  .mentor-design h1,
+  .mentor-design h2,
+  .mentor-design h3 { font-size: unset; }
+}
+
+@media (min-width: 768px) {
+  .mentor-design h1,
+  .mentor-design h2,
+  .mentor-design h3 { font-size: unset; }
+}
+
+@media (min-width: 992px) {
+  .mentor-design h1,
+  .mentor-design h2,
+  .mentor-design h3 { font-size: unset; }
+}
+
+@media (min-width: 1200px) {
+  .mentor-design h1,
+  .mentor-design h2,
+  .mentor-design h3 { font-size: unset; }
+}
+
+.stat-card { @apply flex flex-col p-6 rounded-lg border bg-card text-card-foreground shadow-sm transition-all hover:shadow-md; }
+.stat-value { @apply text-3xl font-bold; }
+.stat-label { @apply text-sm text-muted-foreground; }
+.status-badge { @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium; }
+.status-badge-completed { @apply bg-green-100 text-green-800; }
+.status-badge-pending { @apply bg-yellow-100 text-yellow-800; }
+.status-badge-in-progress { @apply bg-blue-100 text-blue-800; }
+.term-badge { @apply text-xs font-medium rounded-full px-4 py-1.5; }
+.term-badge-short { background: hsl(var(--term-short)); color: hsl(var(--term-short-foreground)); }
+.term-badge-mid { background: hsl(var(--term-mid)); color: hsl(var(--term-mid-foreground)); }
+.term-badge-long { background: hsl(var(--term-long)); color: hsl(var(--term-long-foreground)); }
+.meeting-card { @apply flex items-center justify-between p-4 rounded-lg border bg-card text-card-foreground hover:bg-secondary/50 transition-colors; }
+.activity-card { @apply flex items-start justify-between p-4 rounded-lg border bg-card text-card-foreground hover:bg-secondary/50 transition-colors; }
